@@ -1,0 +1,14 @@
+<h1>Angular Blog Site</h1>
+
+<button routerLink="/" routerLinkActive="active">Home</button>
+<button routerLink="/posts" 
+    routerLinkActive="active"
+    [queryParams]="{ page: 1, orderBy: 'newest' }"
+>
+    Post List
+</button>
+<a routerLink="/posts">Post List</a>
+
+<button (click)="onSubmit()">Submit</button>
+
+<router-outlet></router-outlet>
